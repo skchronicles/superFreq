@@ -400,7 +400,7 @@ outputMeanCNV = function(metaData, project, output, subgroup='', inGroup=T, outN
   xlsFile = paste0(plotDirectory, '/meanCNV.xls')
   if ( !inGroup ) xlsFile = paste0(plotDirectory, '/meanCNVnotInGroup.xls')
   if ( outName != '' ) xlsFile = paste0(outName, '.xls')
-  WriteXLS('output', xlsFile)
+  WriteXLS('output', xlsFile, verbose = TRUE)
     
   catLog('done.\n')
 }

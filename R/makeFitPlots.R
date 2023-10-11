@@ -53,7 +53,7 @@ makeFitPlots = function(fit, plotDirectory, genome, forceRedoVolcanoes=F, forceR
             )[ord,]
     }
     names(tops) = make.unique(substring(names(tops), 1, 29))
-    WriteXLS('tops', differentRegionFile)
+    WriteXLS('tops', differentRegionFile, verbose = TRUE)
     catLog('done!\n', sep='')
   }
 
@@ -83,7 +83,7 @@ makeFitPlots = function(fit, plotDirectory, genome, forceRedoVolcanoes=F, forceR
             )[ord,]
     }
     names(tops) = make.unique(substring(names(tops), 1, 29))
-    WriteXLS('tops', differentRegionFile)
+    WriteXLS('tops', differentRegionFile, verbose = TRUE)
     catLog('done!\n', sep='')
   }
 }
@@ -146,7 +146,7 @@ makeFitPlots2 = function(fits, plotDirectory, genome, forceRedoVolcanoes=F, forc
             )[ord,]
     }
     names(tops) = make.unique(substring(names(tops), 1, 29))
-    WriteXLS('tops', differentRegionFile)
+    WriteXLS('tops', differentRegionFile, verbose = TRUE)
     catLog('done!\n', sep='')
   }
 
@@ -176,7 +176,7 @@ makeFitPlots2 = function(fits, plotDirectory, genome, forceRedoVolcanoes=F, forc
             )[ord,]
     }
     names(tops) = make.unique(substring(names(tops), 1, 29))
-    WriteXLS('tops', differentRegionFile)
+    WriteXLS('tops', differentRegionFile, verbose = TRUE)
     catLog('done!\n', sep='')
   }
 }

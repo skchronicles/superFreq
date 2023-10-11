@@ -192,11 +192,11 @@ qualityProgression = function(qs, SNPs, normal, db=T, nondb=T, excelFile='', mai
       write.csv(multiSampleData, gsub('.xls$', '.csv', excelFile))
       
       if ( nrow(multiSampleData) <= 65000 )
-        WriteXLS('multiSampleData', excelFile)
+        WriteXLS('multiSampleData', excelFile, verbose = TRUE)
       else {
         warning('truncating .xls output to 65k rows in multisample.')
         multiSampleData = multiSampleData[order(multiSampleData$severity)[1:65000],]
-        WriteXLS('multiSampleData', excelFile)
+        WriteXLS('multiSampleData', excelFile, verbose = TRUE)
       }
       
       

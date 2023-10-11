@@ -87,7 +87,7 @@ outputSomaticVariants = function(variants, genome, plotDirectory, cpus=cpus, for
     }
     names(XLsomatics) = make.unique(substring(names(XLsomatics), 1, 29))
     if ( !onlyForVEP ) catLog('writing to xls...')
-    if ( !onlyForVEP ) WriteXLS('XLsomatics', outfile)
+    if ( !onlyForVEP ) WriteXLS('XLsomatics', outfile, verbose = TRUE)
 
 	#this outputs all variants (beyond 65k) to a single .csv.
 	#purpose was to simplify downstream analysis without hving to parse

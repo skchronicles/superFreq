@@ -20,7 +20,7 @@ outputNewVariants = function(variants, pairs, genome, directory, cpus=1, forceRe
         news[[name]] = news[[name]][1:min(nrow(news[[name]]), 65000),]
       }
     }
-    WriteXLS('news', outfile)
+    WriteXLS('news', outfile, verbose = TRUE)
   }
 }
 

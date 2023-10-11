@@ -340,7 +340,7 @@ updateCNVplots = function(metaData, forceRedo=F, cpus=1, genome='hg19') {
 
       #print to excel
       catLog('Writing to', outfile, '\n')
-      WriteXLS('news', outfile)
+      WriteXLS('news', outfile, verbose = TRUE)
     }
   }
   catLog('Done!\n')
