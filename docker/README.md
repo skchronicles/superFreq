@@ -10,11 +10,11 @@ docker image ls
 docker build --no-cache -f Dockerfile --tag=superfreq:v0.1.1 .
 
 # Testing, take a peek inside
-docker run -ti superfreq:v0.1.0 /bin/bash
+docker run -ti superfreq:v0.1.1 /bin/bash
 
 # Updating Tag  before pushing to DockerHub
-docker tag superfreq:v0.1.0 skchronicles/superfreq:v0.1.1
-docker tag superfreq:v0.1.0 skchronicles/superfreq         # latest
+docker tag superfreq:v0.1.1 skchronicles/superfreq:v0.1.1
+docker tag superfreq:v0.1.1 skchronicles/superfreq         # latest
 
 # Check out new tag(s)
 docker image ls
@@ -29,7 +29,7 @@ docker push skchronicles/superfreq:latest
 Scan your image for known vulnerabilities:
 
 ```bash
-docker scan superfreq:v0.1.0
+docker scan superfreq:v0.1.1
 ```
 
 ### Gotchas

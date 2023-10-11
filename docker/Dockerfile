@@ -170,7 +170,7 @@ WORKDIR /opt2
 ################ POST #################
 # Add Dockerfile and export environment 
 # variables and update permissions
-ADD Dockerfile /opt2/superfreq_1-4-5.dockerfile
+ADD Dockerfile /opt2/superfreq_1-4-6.dockerfile
 RUN chmod -R a+rX /opt2
 ENV PATH="/opt2:$PATH"
 WORKDIR /data2
